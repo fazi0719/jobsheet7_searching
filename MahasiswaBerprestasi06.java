@@ -1,7 +1,10 @@
 public class MahasiswaBerprestasi06 {
-    Mahasiswa06[] listMhs = new Mahasiswa06[5];
-    int idx;
+   Mahasiswa06[] listMhs;
+    int idx =0;
 
+     public MahasiswaBerprestasi06(int jumlah) {
+     listMhs = new Mahasiswa06[jumlah];
+    }
     // METHOD dari pertemuan 6
     void tambah(Mahasiswa06 m) {
         if (idx < listMhs.length) {
