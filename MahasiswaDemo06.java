@@ -1,9 +1,12 @@
 import java.util.Scanner;
 public class MahasiswaDemo06 {
     public static void main(String[] args) {
-        MahasiswaBerprestasi06 mhs = new MahasiswaBerprestasi06();
         Scanner sc = new Scanner(System.in);
-        int jumMhs = 5;
+        
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumMhs = sc.nextInt();
+        sc.nextLine();
+        MahasiswaBerprestasi06 mhs = new MahasiswaBerprestasi06(jumMhs);
 
         for (int i = 0; i < jumMhs; i++) {
             System.out.println("Masukkan data mahasiswa ke-" + (i + 1));
